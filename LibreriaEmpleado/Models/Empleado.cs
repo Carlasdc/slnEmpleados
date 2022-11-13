@@ -14,6 +14,6 @@ namespace LibreriaEmpleado.Models
         }
         public Empleado() { }
         public string Legajo { get; set; }
-        
+        public Departamento Departamento { get; set; }
     }
 }

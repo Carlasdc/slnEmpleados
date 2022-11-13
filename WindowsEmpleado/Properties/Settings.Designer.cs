@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WindowsEmpleados.Properties {
+namespace WindowsEmpleado.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -27,9 +27,9 @@ namespace WindowsEmpleados.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\SQLExpress;Initial Catalog=DBEmpleados;Integrated Security=True")]
-        public string keyDBEmpleados {
+        public string keyDbEmpleados {
             get {
-                return ((string)(this["keyDBEmpleados"]));
+                return ((string)(this["keyDbEmpleados"]));
             }
         }
     }

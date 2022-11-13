@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WindowsEmpleados.Properties {
+namespace LibreriaEmpleado.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
