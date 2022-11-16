@@ -14,7 +14,7 @@ namespace WindowsEmpleado
 {
     public partial class Form1 : Form
     {
-        DbEmpleados context = new DbEmpleados();
+        DbEmpleadoContext context = new DbEmpleadoContext();
         public Form1()
         {
             InitializeComponent();
@@ -22,7 +22,7 @@ namespace WindowsEmpleado
 
         private void btnInsertar_Click(object sender, EventArgs e)
         {
-            Empleado empleado = new Empleado() { IndividuoId= 12, Nombre="Martin", Apellido="Rodriguez",Legajo="2244" };
+            Empleado empleado = new Empleado() { EmpleadoId= 12, Nombre="Martin", Apellido="Rodriguez",Legajo="2244" };
             context.Empleados.Add(empleado);
 
             int filasAfectadas = context.SaveChanges();

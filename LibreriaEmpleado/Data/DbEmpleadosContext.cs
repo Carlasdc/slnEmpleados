@@ -6,11 +6,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace WindowsEmpleados.Data
 {
-    public class DbEmpleados : DbContext
+    public class DbEmpleadoContext:DbContext
     {
-        public DbEmpleados() : base("keyDbEmpleados") { }
+        public DbEmpleadoContext() : base("keyDBEmpleados") { }
 
         // por cada modelo una propiedad DBSET
         public DbSet<Empleado> Empleados { get; set; }
@@ -18,4 +19,3 @@ namespace WindowsEmpleados.Data
 
     }
 }
-

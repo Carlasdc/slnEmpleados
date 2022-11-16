@@ -10,7 +10,7 @@ namespace WindowsEmpleado
 {
     public static class AdminEmpleado
     {
-        public static DbEmpleados context = new DbEmpleados();
+        public static DbEmpleadoContext context = new DbEmpleadoContext();
 
         public static List<Empleado> Listar()
         {
@@ -21,7 +21,7 @@ namespace WindowsEmpleado
 
         public static int Insertar(Empleado empleado)
         {
-            int id = empleado.IndividuoId;
+            int id = empleado.EmpleadoId;
             Empleado empleadoIns = context.Empleados.Find(id);
             if (empleadoIns != null)
             {

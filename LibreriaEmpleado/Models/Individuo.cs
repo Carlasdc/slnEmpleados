@@ -8,14 +8,12 @@ namespace LibreriaEmpleado.Models
 {
     public class Individuo
     {
-        public Individuo(int individuoId, string nombre, string apellido)
-        {
-            IndividuoId = individuoId;
+        public Individuo( string nombre, string apellido)
+        { 
             Nombre = nombre;
             Apellido = apellido;
         }
         public Individuo() {}
-        public int IndividuoId { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }
     }

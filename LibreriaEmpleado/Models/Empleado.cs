@@ -8,11 +8,13 @@ namespace LibreriaEmpleado.Models
 {
      public class Empleado:Individuo
     {
-        public Empleado(int individuoId, string nombre, string apellido, string legajo) : base(individuoId, nombre, apellido)
+        public Empleado(int empleadoId, string nombre, string apellido, string legajo) : base( nombre, apellido)
         {
+            EmpleadoId=empleadoId;
             Legajo = legajo;
         }
         public Empleado() { }
+        public int EmpleadoId { get; set; }
         public string Legajo { get; set; }
         public Departamento Departamento { get; set; }
     }
